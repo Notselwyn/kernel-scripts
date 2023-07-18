@@ -2,7 +2,7 @@
 A collection of curated scripts for kernel-related devops.
 
 ### Workflow
-Typical usage starts out with running `create-image.sh` to create an image, then running it using `run.sh $KERNEL_DIR`
+Typical usage starts out with running `create-image.sh` to create an image, then running it using `run.sh`. Once the kernel is live, one can use the other scripts like `ssh.sh` and `gdb.sh` to interact. 
 
 
 ### Scripts
