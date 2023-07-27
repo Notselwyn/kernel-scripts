@@ -8,8 +8,8 @@ qemu-system-x86_64 \
 	-kernel "$1/arch/x86/boot/bzImage" \
 	-append "console=ttyS0 root=/dev/sda earlyprintk=serial nokaslr net.ifnames=0 kasan_multi_shot=1" \
 	-drive "file=$IMAGE_DISK,format=raw" \
-	-net user,host=10.0.2.10,hostfwd=tcp:127.0.0.1:10021-:22 \
-	-net nic,model=e1000 \
+	-netdev user,id=net0,hostfwd=tcp::10021-:22 \
+	-device e1000,netdev=net0 \
 	-enable-kvm \
 	-nographic \
 	-pidfile vm.pid \
