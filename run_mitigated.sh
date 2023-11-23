@@ -18,5 +18,5 @@ qemu-system-x86_64 \
 	-pidfile vm.pid \
 	-gdb tcp::1234 \
 	-virtfs "local,path=$IMAGE_MNT,mount_tag=host0,security_model=passthrough,id=host0" \
-        -virtfs "local,path=/mnt,mount_tag=host1,security_model=passthrough,id=host1" \
+	-virtfs "local,path=/mnt,mount_tag=host1,security_model=passthrough,id=host1" \
 #	2>&1 | tee vm.log
