@@ -12,7 +12,7 @@ qemu-system-x86_64 \
 	-netdev user,id=net0,net=192.168.76.0/24,hostfwd=tcp::10021-:22,hostfwd=tcp::8008-:8008 \
 	-device virtio-net-pci,netdev=net0 \
 	-device virtio-serial \
-        -nographic \
+	-nographic \
 	-enable-kvm \
 	-smp 2 \
 	-pidfile vm.pid \
