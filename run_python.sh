@@ -9,4 +9,4 @@ if ! command -v python3 &>/dev/null; then
     apt update -y && apt install python3 -y
 fi
 
-cd /tmp && chmod +x ./script && TERM=$TERM ./script"
+cd /tmp && chmod +x ./script && TERM=$TERM ./script $2 $3 $4 $5"
